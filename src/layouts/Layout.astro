@@ -1,0 +1,97 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.5, user-scalable=yes, viewport-fit=cover">
+		
+		<meta name="keywords" content="轻历, 时间管理, 任务规划, 效率工具, GTD, 日程安排, 提醒, 笔记, 跨平台, Android, iOS, Web 应用">
+		<meta name="description" content="轻历 - 让改变按计划发生。轻历是一款支持全平台的时间管理和任务规划应用，帮助您有效规划日常生活和工作。">
+		<meta name="author" content="轻历">
+		<meta name="robots" content="index,follow">
+		
+		<!-- <meta property="og:title" content="轻历 - 让改变按计划发生">
+		<meta property="og:description" content="轻历是一款支持全平台的时间管理和任务规划应用...">
+		<meta property="og:image" content="您的图片链接">
+		<meta property="og:url" content="https://yourwebsite.com"> -->
+	
+		<!-- <meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="轻历 - 让改变按计划发生">
+		<meta name="twitter:description" content="轻历是一款支持全平台的时间管理和任务规划应用...">
+		<meta name="twitter:image" content="您的图片链接"> -->
+	
+		<!-- <link rel="canonical" href="https://yourwebsite.com">
+		<link rel="alternate" hreflang="zh-CN" href="https://yourwebsite.com/zh-cn">
+		<link rel="alternate" hreflang="en" href="https://yourwebsite.com/en"> -->
+	
+		<title>轻历 - 让改变按计划发生 | 高效时间管理和任务规划应用</title>
+		
+		<link rel="shortcut icon" href="/favicon.svg">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg">
+	
+		<meta name="theme-color" content="#ffffff">
+		<meta name="msapplication-TileColor" content="#4772fa">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="msapplication-config" content="none">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="MobileOptimized" content="320">
+		<meta name="screen-orientation" content="portrait">
+		<meta name="full-screen" content="yes">
+		<meta name="browsermode" content="application">
+		<meta name="x5-orientation" content="portrait">
+		<meta name="x5-fullscreen" content="true">
+		<meta name="x5-page-mode" content="app">
+
+
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #ffffff;
+		background-size: 224px;
+	}
+
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>
